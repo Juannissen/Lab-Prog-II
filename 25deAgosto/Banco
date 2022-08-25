@@ -1,0 +1,82 @@
+//esto no esta terminado
+
+
+//MAIN
+
+
+import java.util.Scanner;
+
+public class Main {
+    Scanner s = new Scanner (System.in);
+
+    public static void main(String[] args) {
+     int accion = 0;
+        System.out.println("ingrese su num de cuenta");
+
+
+
+    }
+}
+
+
+//CLASE CLIENTE
+
+
+public class Cliente {
+    int dni;
+    int numcliente;
+    String nombre;
+    Cuenta cuentas;
+
+    int saldo;
+    int numcuenta;
+
+public Cliente (int dni, int numcliente, String nombre, Cuenta cuentas) {
+    this.dni = dni;
+    this.numcliente = numcliente;
+    this.nombre = nombre;
+    this.cuentas = cuentas;
+
+}
+
+public int getDni(){
+    return dni;
+    }
+
+public int getNumcliente(){
+    return numcliente;
+}
+
+public String getNombre(){
+    return nombre;
+}
+
+public int getSaldo(){
+    return saldo;
+}
+
+public int getNumcuenta(){
+    return numcuenta;
+}
+
+}
+
+
+//CLASE CAJA
+
+public class Caja {
+    public String depositar;
+    public String extraer;
+    public int accion;
+
+    if (accion = 1)
+        System.out.println("ud desea depositar");
+    else if
+            (accion = 2)
+        System.out.println("ud desea extraer")
+
+
+   /* depositar (Cuentas, nombre);
+   int extraer (Cuentas, monto)*/
+}
+
