@@ -9,13 +9,18 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner s = new Scanner (System.in);
-        
-        int opcion = 1;
-        
+        System.out.println("Ingrese su num de cuenta");
+        int cuentas = s.nextInt();
+        /*-----------------------------------------------------------*/
+        Cliente cl1 = new Cliente();
+        cl1.cliente(s.nextInt(),s.nextInt(),s.nextLine());
+
+
+        /*-----------------------------------------------------------*/
         Caja c1 = new Caja();
-        c1.caja("","",0);
-        
-        System.out.println("ingrese su num de cuenta");
+        c1.caja(s.nextDouble(),s.nextDouble(),s.nextInt());
+
+
 
 
 
@@ -31,17 +36,23 @@ public class Cliente {
     int dni;
     int numcliente;
     String nombre;
-    Cuenta cuentas;
 
     int saldo;
     int numcuenta;
 
-public Cliente (int dni, int numcliente, String nombre, Cuenta cuentas) {
+public void cliente (int dni, int numcliente, String nombre) {
+    System.out.println("Ingrese su DNI");
+    int cuentas = s.nextInt();
+
+    System.out.println("Ingrese su num de cliente");
+
+    System.out.println("Ingrese nombre");
+
+
+
     this.dni = dni;
     this.numcliente = numcliente;
     this.nombre = nombre;
-    this.cuentas = cuentas;
-
 }
 
 public int getDni(){
@@ -67,15 +78,16 @@ public int getNumcuenta(){
 }
 
 
+
 //CLASE CAJA
 
 public class Caja {
-    public String depositar;
-    public String extraer;
+    public double depositar;
+    public double extraer;
 
 
 
-    public void caja(String[]depositar, String[]extraer, int accion){
+    public void caja(double depositar, double extraer, int accion){
 
 
     if (accion == 1)
@@ -90,5 +102,4 @@ public class Caja {
    /* depositar (Cuentas, nombre);
    int extraer (Cuentas, monto)*/
 }
-
 
