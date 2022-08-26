@@ -1,22 +1,27 @@
 //esto no esta terminado
 
 
-//MAIN
-
+MAIN
 
 import java.util.Scanner;
 
 public class Main {
-    Scanner s = new Scanner (System.in);
 
     public static void main(String[] args) {
-     int accion = 0;
+        Scanner s = new Scanner (System.in);
+        
+        int opcion = 1;
+        
+        Caja c1 = new Caja();
+        c1.caja("","",0);
+        
         System.out.println("ingrese su num de cuenta");
 
 
 
     }
 }
+
 
 
 //CLASE CLIENTE
@@ -67,16 +72,23 @@ public int getNumcuenta(){
 public class Caja {
     public String depositar;
     public String extraer;
-    public int accion;
 
-    if (accion = 1)
+
+
+    public void caja(String[]depositar, String[]extraer, int accion){
+
+
+    if (accion == 1)
         System.out.println("ud desea depositar");
+
     else if
-            (accion = 2)
-        System.out.println("ud desea extraer")
+            (accion == 2)
+        System.out.println("ud desea extraer");
 
 
+}
    /* depositar (Cuentas, nombre);
    int extraer (Cuentas, monto)*/
 }
+
 
